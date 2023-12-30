@@ -1,10 +1,206 @@
 .App {
-  text-align: center;
-  background-color: antiquewhite;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
   
 }
 
-body{
-  background: rgb(102,255,70);
-  background: linear-gradient(90deg, rgba(102,255,70,1) 0%, rgba(0,255,4,1) 53%, rgba(0,182,30,1) 100%);
+.underline{
+  display: block;
+
+ 
+  background-color: greenyellow;
+  border: 1rem solid black;
+  width: 6rem;
+  height: 5px;
+  justify-content: center;
+  margin: auto;
+  border-radius: 5rem;
+
+}
+
+/* home start */
+
+
+.home img{
+  width: 50rem;
+}
+.home{
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10rem 0 10rem;
+  margin: auto;
+  height: 100vh;
+ 
+
+}
+.hometext{
+  margin: 0;
+}
+.hometext p{
+  margin: 0;
+}
+.xe{
+  align-items:end;
+  font-size: 12vh;
+  color: greenyellow;
+  margin: 0;
+
+}
+.grab{
+  font-weight: 700;
+}
+.button{
+  padding-top: 2rem;
+}
+.hometext button{
+  background-color:#e31c69 ;
+  margin: 0;
+  border: none;
+  width: 7rem;
+  height: 2rem;
+  border-radius: 3px;
+  color: white;
+}
+/* navbar styla */
+.navbar{
+  background-color: #000;
+  color: white;
+  padding:0 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  font-size: 1rem;
+}
+.navbar img{
+  width: 6rem;
+  padding: 0 5rem 0 5rem 0;
+}
+.heading{
+  display: flex;
+  gap: 1rem;
+
+}
+.heading li{
+  list-style: none;
+  font-size: 1.5rem;
+
+}
+.login{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+
+}
+.login button{
+  border: none;
+  padding: .3rem 1rem;
+  border-radius: 2px;
+  background-color: greenyellow;
+
+}
+
+/* ingredians page */
+
+.ingrediants{
+  background-color: #000;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+ 
+}
+.ingrediants img{
+  width: 50rem;
+}
+.displaynone{
+  display: none;
+}
+.display{
+  padding-top: 1rem;
+}
+.ingrediant-component{
+  display: grid;
+  gap: 1rem;
+  cursor: pointer;
+ 
+}
+.heading{
+  font-size: 3rem;
+}
+.ing-w{
+ 
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.single{
+  max-height: 2rem;
+  transition:  .2s;
+
+}
+.single{
+  width: 25rem;
+  background-color: #303030;
+  padding: 1rem;
+  border-radius: .5rem;
+  max-height: 5rem;
+  
+}
+.rotate{
+  
+  transition: .2s;
+  
+}
+.rotate{
+  rotate: 90deg;
+  
+  
+}
+.rotateback{
+  transition: .2s;
+
+}
+
+
+/* promo vidio page */
+.vidio{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  padding: 20rem 0;
+}
+video{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+ padding-top: 3rem;
+  background-color: #000;
+}
+.vidio H1{
+  color: white;
+  margin: auto;
+}
+
+
+/* allproducts css */
+
+.productsall{
+  background-color: #000;
+  color: rgb(255, 255, 255);
+}
+h1{
+  padding: 0;
+  margin: 0;
+}
+.singlecard{
+  background-color:#303030 ;
 }
