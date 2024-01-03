@@ -4,7 +4,7 @@ export const Singleproduct = ({product, addtocart}) => {
     const {id,name,img,cards} = product
 
   return (
-    <div>
+    <div className='singleproduct'>
         <div className="product">
             <h1>{name}</h1>
             <div className="cards">

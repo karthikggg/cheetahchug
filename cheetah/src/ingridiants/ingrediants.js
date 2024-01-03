@@ -16,14 +16,11 @@ const [ingrediant , setingrediant] = useState(ingrediants)
         {
             ingrediant.map((ing)=>{
                return(
-                <Singleingrediants  key={ing.id} ingrediant={ing}  />
-
+                <Singleingrediants key={ing.id} ingrediant={ing}  />
                )
             })
         }
-        
     </div>
-    
     </div>
   )
 }

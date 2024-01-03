@@ -5,26 +5,31 @@ import { Ingrediants } from './ingridiants/ingrediants';
 import { Video } from './video';
 import { Producsts } from './Allproducts/producsts';
 import Allproductsdata from './productsdata';
-
+import { Cart } from './cart/cart';
 
 
 
 function App() {
 const [cartitem , setcartitem] = useState([])
-console.log(cartitem);
+
+
 const addtocart = (id) => {
   console.log();
   setcartitem(Allproductsdata)
   Allproductsdata.filter((cartproduct)=>{
-    if(cartproduct.id == id){
+    if(cartproduct.id === id){
     setcartitem([...cartitem ,cartproduct])
     }
-    
-    
+    console.log(cartitem);
   })
-  
-
 }
+
+const deletecartitem = (event,id) =>{
+  setcartitem(cartitem.filter((del)=> cartitem.id === id))
+  event.preventDefault();
+}
+
+
 
   return (
     <div className="App">
@@ -33,7 +38,8 @@ const addtocart = (id) => {
         <Home />
         <Ingrediants />
         <Video />
-        <Producsts products={Allproductsdata}  addtocart={addtocart}/>
+        <Producsts products={Allproductsdata}   addtocart={addtocart}/>
+        <Cart cartitem={cartitem} deletecartitem={deletecartitem} />
   
       </div>
    

@@ -9,7 +9,7 @@ export const Singleingrediants = ({ingrediant}) => {
 
   return (
     <div className='single' onClick={()=>seting(!ing)}>
-        <div className='ing-w'  >
+        <div className='ing-w'>
             <div>{ingrediant.name}</div>
             <FaChevronRight className={ing ? 'rotate' : 'rotateback'}/>
         </div>

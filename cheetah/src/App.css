@@ -7,8 +7,6 @@
 
 .underline{
   display: block;
-
- 
   background-color: greenyellow;
   border: 1rem solid black;
   width: 6rem;
@@ -23,7 +21,7 @@
 
 
 .home img{
-  width: 50rem;
+  width: 35vw;
 }
 .home{
   background-color: black;
@@ -181,7 +179,7 @@ video{
   display: flex;
   align-items: center;
   justify-content: center;
-  
+  width: 65vw;
  padding-top: 3rem;
   background-color: #000;
 }
@@ -196,6 +194,8 @@ video{
 .productsall{
   background-color: #000;
   color: rgb(255, 255, 255);
+  display: grid;
+
 }
 h1{
   padding: 0;
@@ -203,4 +203,128 @@ h1{
 }
 .singlecard{
   background-color:#303030 ;
+  
+}
+.singleproduct{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+
+
+}
+.cards{
+  display: flex;
+  gap: 1rem;
+}
+.singlecard{
+  width: 8.5rem;
+  display: grid;
+  height: 9rem;
+  border-radius: .5rem;
+}
+ .singleproduct img{
+  width: 30vw;
+  position: relative;
+  left: 4rem;
+}
+.singleproduct h1{
+  font-size: 3vw;
+  padding-bottom: 2rem;
+}
+.percentage{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: .5rem;
+  background-color: #0f0f0f;
+}
+.amount-per-serving{
+  padding: 1.1rem 1rem ;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  height: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: 1.2px;
+
+}
+.Total-fat{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin: 0;
+  padding: 1rem;
+}
+.singleproduct button{
+  padding: 1rem 3rem;
+  margin: 3rem 0;
+  border: none;
+  background-color: #e31c69;
+  font-size: larger;
+  border-radius: .5rem;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* cart css */
+.displaycart{
+  background-color: #000;
+  color: white;
+  display: grid;
+  justify-content: center;
+}
+.displaycart h1{
+  display: flex;
+  justify-content: center;
+}
+.cart-main{
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  padding: 1rem;
+}
+.cart-main img{
+  width: 9rem;
+}
+.cart-main input{
+  background-color: #303030;
+  border: none;
+  color: rgb(156, 156, 156);
+  padding: .6rem;
+  width: 3rem;
+  border-radius: .5rem;
+  margin: .6rem;
+  
+}
+.cart-main input:focus{
+  background-color: #303030;
+  margin: 0;
+  outline: none;
+  padding: .6rem;
+  width: 3rem;
+}
+hr{
+  border: solid #303030 1px;
+}
+.price{
+  font-size: 1.5rem;
+}
+a{
+  color: bisque;
+}
+.cartproductinfo{
+  padding: 1rem;
+}
+.cartproductname{
+  font-size: larger;
+  padding: 1rem 0;
+}
+.instock , .freeship{
+  font-size: .8rem;
+  color: #bababa;
 }
