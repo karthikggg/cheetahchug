@@ -11,22 +11,19 @@ import { Cart } from './cart/cart';
 
 function App() {
 const [cartitem , setcartitem] = useState([])
+console.log(cartitem);
 
 
 const addtocart = (id) => {
-  console.log();
-  setcartitem(Allproductsdata)
   Allproductsdata.filter((cartproduct)=>{
-    if(cartproduct.id === id){
+    if(cartproduct.id == id){
     setcartitem([...cartitem ,cartproduct])
     }
-    console.log(cartitem);
   })
 }
 
 const deletecartitem = (event,id) =>{
   setcartitem(cartitem.filter((del)=> cartitem.id === id))
-  event.preventDefault();
 }
 
 

@@ -17,7 +17,7 @@ export const Singlecartitem = ({singlecartitem , deletecartitem}) => {
           <input type="number" id='quantity' placeholder='1'/>
         </form>
         <div className="price">{singlecartitem.price}</div>
-        <div onClick={deletecartitem(singlecartitem.id)} >delete</div>
+        <div onClick={()=>deletecartitem(singlecartitem.id)} >delete</div>
 
       </div>
     </div>
