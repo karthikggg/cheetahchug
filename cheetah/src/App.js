@@ -11,7 +11,6 @@ import { Cart } from './cart/cart';
 
 function App() {
 const [cartitem , setcartitem] = useState([])
-console.log(cartitem);
 
 
 const addtocart = (id) => {
@@ -22,8 +21,11 @@ const addtocart = (id) => {
   })
 }
 
-const deletecartitem = (event,id) =>{
-  setcartitem(cartitem.filter((del)=> cartitem.id === id))
+const deletecartitem = (id) =>{
+  setcartitem(cartitem.filter((del)=> del.id != id))
+  console.log(cartitem);
+  console.log(id);
+
 }
 
 

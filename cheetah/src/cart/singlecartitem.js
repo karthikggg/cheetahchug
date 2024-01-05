@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 
 export const Singlecartitem = ({singlecartitem , deletecartitem}) => {
-  console.log(singlecartitem);
   const handlesubmit =()=>{
 
   }
