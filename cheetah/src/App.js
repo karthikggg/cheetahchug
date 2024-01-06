@@ -6,12 +6,13 @@ import { Video } from './video';
 import { Producsts } from './Allproducts/producsts';
 import Allproductsdata from './productsdata';
 import { Cart } from './cart/cart';
+import { Navbar } from './navbar';
 
 
 
 function App() {
 const [cartitem , setcartitem] = useState([])
-
+const [discart , setdiscart] = useState(false)
 
 const addtocart = (id) => {
   Allproductsdata.filter((cartproduct)=>{
@@ -29,18 +30,26 @@ const deletecartitem = (id) =>{
 }
 
 
+const displaycart =(trueorfalse) =>{
+setdiscart(trueorfalse)
+console.log(discart);
+
+}
+
+
 
   return (
     <div className="App">
       <div>
-
+        <Navbar displaycart={displaycart} discart={discart}  />
         <Home />
         <Ingrediants />
         <Video />
         <Producsts products={Allproductsdata}   addtocart={addtocart}/>
-        <Cart cartitem={cartitem} deletecartitem={deletecartitem} />
+        <Cart cartitem={cartitem} deletecartitem={deletecartitem}  discart={discart}/>
   
       </div>
+      
    
     </div>
   );

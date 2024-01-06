@@ -6,6 +6,7 @@ export const Singlecartitem = ({singlecartitem , deletecartitem}) => {
   }
   return (
     <div className='cart-main'>
+  
       <img src={singlecartitem.img} alt="" />
       <div className="cartproductinfo">
         <div className="cartproductname">{singlecartitem.name}</div>
@@ -17,6 +18,7 @@ export const Singlecartitem = ({singlecartitem , deletecartitem}) => {
         </form>
         <div className="price">{singlecartitem.price}</div>
         <div onClick={()=>deletecartitem(singlecartitem.id)} >delete</div>
+        
 
       </div>
     </div>

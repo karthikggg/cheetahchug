@@ -1,12 +1,11 @@
 import React from 'react'
-import { Navbar } from './navbar'
+import { Navbar } from '../navbar'
 
 
 
 export const Home = () => {
   return (
     <div className="main">
-       <div><Navbar /></div>
       <div className='home'>
         <div className="hometext">
           <p>Energy drink</p>

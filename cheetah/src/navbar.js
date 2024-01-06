@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
-import navbar from './data';
+import navbar from './home/data';
 import { HiOutlineShoppingCart } from "react-icons/hi2";
 
 
-export const Navbar = () => {
+
+export const Navbar = ({displaycart, discart}) => {
     const [nav , setnav] = useState(navbar)
+    console.log(discart);
   return (
     <div className='navbar'>
         <img src="./assets/logo.png" alt="" className="logo" />
@@ -17,7 +19,7 @@ export const Navbar = () => {
         </div>
         <div className="login">
             <button>Register</button>
-            <HiOutlineShoppingCart size={40} />
+            <HiOutlineShoppingCart size={40} onClick={()=>displaycart(!discart)} />
         </div>
     </div>
   )
