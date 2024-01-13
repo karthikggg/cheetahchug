@@ -18,7 +18,7 @@ if (discart) {
     
       <div className="carthead">
        <div className='shopping-cart'>
-       <h1>shopping cart</h1>
+       <h1>shopping carts</h1>
        <div className="underline"></div>
        </div>
        <div><IoCloseSharp className='IoCloseSharp' onClick={()=>displaycart(false)} size={40} color='#adff2f' /></div>
