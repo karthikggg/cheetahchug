@@ -38,7 +38,7 @@
   width: 35vw;
 }
 .home{
-  background-color: black;
+  background-color: rgb(224, 0, 0);
   color: white;
   display: flex;
   justify-content: space-between;
