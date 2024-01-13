@@ -39,15 +39,18 @@ console.log(discart);
 
 
   return (
-    <div className="App">
-      <div>
+    <div className="">
+      <div className={discart? 'all-content' : 'content'}>
         <Navbar displaycart={displaycart} discart={discart}  />
         <Home />
         <Ingrediants />
         <Video />
         <Producsts products={Allproductsdata}   addtocart={addtocart}/>
-        <Cart cartitem={cartitem} deletecartitem={deletecartitem}  discart={discart}/>
+       
   
+      </div>
+      <div className={discart? 'none' : 'dis'}>
+          <Cart displaycart={displaycart} cartitem={cartitem}  deletecartitem={deletecartitem}  discart={discart}/>
       </div>
       
    

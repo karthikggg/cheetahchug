@@ -14,10 +14,10 @@ export const Singlecartitem = ({singlecartitem , deletecartitem}) => {
         <div className="freeship">Eligible for free shipping</div>
         <form action="" onSubmit={handlesubmit()}>
           <label htmlFor="quantity">Quantity</label>
-          <input type="number" id='quantity' placeholder='1'/>
+          <input type="number" id='quantity' min={1} placeholder='1'/>
         </form>
-        <div className="price">{singlecartitem.price}</div>
-        <div onClick={()=>deletecartitem(singlecartitem.id)} >delete</div>
+        <div className="price">{singlecartitem.price + '$'}</div>
+        <a onClick={()=>deletecartitem(singlecartitem.id)} >delete</a>
         
 
       </div>
