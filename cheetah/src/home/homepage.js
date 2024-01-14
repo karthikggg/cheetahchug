@@ -13,7 +13,7 @@ export const Home = () => {
           <p className='grab'>grab your first drink</p>
           <div className="button"><button>Add to cart</button></div>
         </div>
-          <img src="./assets/home.jpg" alt="" />
+          <img src="./assets/home.jpg" alt="none" />
       </div>
     </div>
   )
