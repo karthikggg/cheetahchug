@@ -41,7 +41,7 @@ const Allproductsdata =[
         id:'2',
         name:'CHEETAH CHUG XE',
         img:'./assets/2 selling.jpg',
-        price:'19',
+        price:'25',
         cards:[
             {
                 id:'1',
@@ -79,7 +79,7 @@ const Allproductsdata =[
         id:'3',
         name:'CHEETAH CHUG XXE',
         img:'./assets/3 selling.jpg',
-        price:'19',
+        price:'30',
         cards:[
             {
                 id:'1',

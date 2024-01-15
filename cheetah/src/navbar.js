@@ -13,7 +13,7 @@ export const Navbar = ({displaycart, discart}) => {
         <div className="heading">
             {navbar.map((nav)=>{
                 return(
-                    <li key={nav.id}>{nav.name}</li> 
+                    <li  key={nav.id}><a href='#cart'>{nav.name}</a></li> 
                 )
             })}
         </div>
