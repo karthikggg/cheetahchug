@@ -7,9 +7,11 @@ import { Producsts } from './Allproducts/producsts';
 import Allproductsdata from './productsdata';
 import { Cart } from './cart/cart';
 import { Navbar } from './navbar';
+import { Footer } from './footer';
 
 
 
+// eslint-disable-next-line
 function App() {
 const [cartitem , setcartitem] = useState([])
 const [discart , setdiscart] = useState(false)
@@ -40,14 +42,14 @@ console.log(discart);
 
   return (
     <div className="">
+      
       <div className={discart? 'all-content' : 'content'}>
         <Navbar displaycart={displaycart} discart={discart}  />
         <Home />
         <Ingrediants />
         <Video />
         <Producsts products={Allproductsdata}   addtocart={addtocart}/>
-       
-  
+        <Footer />
       </div>
       <div className={discart? 'none' : 'dis'}>
           <Cart displaycart={displaycart} cartitem={cartitem}  deletecartitem={deletecartitem}  discart={discart}/>

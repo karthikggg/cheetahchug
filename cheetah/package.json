@@ -1,5 +1,4 @@
 {
-  "homepage": "http://karthikggg.github.io/cheetahchug",
   "name": "cheetah",
   "version": "0.1.0",
   "private": true,
@@ -14,10 +13,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts --openssl-legacy-provider build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "start": "SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
+    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts build"
   },
   "eslintConfig": {
     "extends": [
@@ -36,8 +33,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^6.1.1"
   }
+ 
 }

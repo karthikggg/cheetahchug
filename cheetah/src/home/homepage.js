@@ -11,7 +11,7 @@ export const Home = () => {
           <p>Energy drink</p>
           <h1 className='xe'>Xtreme emergency</h1>
           <p className='grab'>grab your first drink</p>
-          <div className="button"><button>Add to cart</button></div>
+          <button>buy</button>
         </div>
           <img src="./assets/home.jpg" alt="none" />
       </div>

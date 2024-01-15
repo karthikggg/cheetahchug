@@ -4,9 +4,13 @@
   font-family: sans-serif;
   border: 0;
   margin: 0;
+  background-color: #000;
  
 
   
+}
+body{
+  background-color: black;
 }
 .all-content{
   transition: .2s;
@@ -57,7 +61,7 @@
 }
 .xe{
   align-items:end;
-  font-size: 12vh;
+  font-size: 6vw;
   color: greenyellow;
   margin: 0;
 
@@ -65,21 +69,12 @@
 .grab{
   font-weight: 700;
 }
-.button{
-  padding-top: 2rem;
-}
-.hometext button{
-  background-color:#e31c69 ;
-  margin: 0;
-  border: none;
-  width: 7rem;
-  height: 2rem;
-  border-radius: 3px;
-  color: white;
-}
+
+
 /* navbar styla */
+
 .navbar{
-  background-color: #363636;
+  background-color: transparent;
   color: white;
   padding:0 3rem;
   display: flex;
@@ -114,13 +109,24 @@
 }
 .login button{
   border: none;
-  padding: .3rem 1rem;
+  padding: .4rem 1rem;
   border-radius: 2px;
-  background-color: greenyellow;
+  background-color: rgba(172, 255, 47, 0.925);
+  color: #000;
+  font-size: .9rem;
+  letter-spacing: 0;
+  font-weight: 500;
+  cursor: pointer;
 
 }
 
 /* ingredians page */
+.ingrediants-top{
+  display: flex;
+  background-color: #000;
+  color: white;
+  justify-content: center;
+}
 
 .ingrediants{
   background-color: #000;
@@ -132,7 +138,7 @@
  
 }
 .ingrediants img{
-  width: 50rem;
+  width: 35vw;
 }
 .displaynone{
   display: none;
@@ -186,6 +192,8 @@
 
 
 /* promo vidio page */
+
+
 .vidio{
   display: grid;
   align-items: center;
@@ -277,7 +285,7 @@ h1{
   margin: 0;
   padding: 1rem;
 }
-.singleproduct button{
+button{
   padding: 1rem 3rem;
   margin: 3rem 0;
   border: none;
@@ -408,3 +416,37 @@ a{
   font-size: .8rem;
   color: #bababa;
 }
+
+/* Footer css */
+
+.footer{
+  background-color:#0f0f0f ;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  padding-right: 8rem;
+}
+.footer img{
+  height: 22vw;
+  padding-left: 1px;
+}
+.footer li {
+  list-style-type: none;
+  padding: 3rem 0;
+  padding-left: 0;
+}
+.footer li ul{
+  padding: 0;
+  color: #f4f4f4b6;
+  font-size: 1.2rem;
+  transition: .1s;
+  cursor: pointer;
+}
+.about , .more-info , .legal{
+  padding-top: 3rem;
+}
+.footer li ul:hover {
+  color: chartreuse;
+}
+

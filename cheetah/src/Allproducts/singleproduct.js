@@ -18,7 +18,7 @@ export const Singleproduct = ({product, addtocart}) => {
                     )
                 })}
             </div>
-            <button onClick={()=>addtocart(id)}>buy</button>
+            <button onClick={()=>addtocart(id)}>Add to cart</button>
         </div>
         <img src={img} alt="" />
     </div>
