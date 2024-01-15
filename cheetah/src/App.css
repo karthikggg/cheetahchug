@@ -37,7 +37,6 @@ body{
 
 /* home start */
 
-
 .home img{
   width: 35vw;
 }
@@ -45,13 +44,10 @@ body{
   background-color: black;
   color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 0 10rem 0 10rem;
   margin: auto;
   height: 100vh;
- 
-
 }
 .hometext{
   margin: 0;
@@ -65,9 +61,9 @@ body{
   font-size: 5vw;
   color: greenyellow;
   margin: 0;
-  font-weight: 900;
+  font-weight: 700;
   width: 20vw;
-  line-height: 6rem;
+  line-height: 4vw;
   padding: 2rem 0;
 
 
@@ -102,13 +98,20 @@ body{
 }
 .heading{
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
+  color: #bababa;
 
 }
 .heading li{
   list-style: none;
   font-size: 1.5rem;
+  cursor: pointer;
+  transition: .2s;
 
+}
+.heading li:hover{
+  color: #e31c69;
+  text-decoration: underline;
 }
 .login{
   display: flex;
@@ -150,10 +153,17 @@ body{
   width: 35vw;
 }
 .displaynone{
-  display: none;
+  height: 0px;
+  transition: .2s ease-in-out;
+  opacity: 0;
 }
 .display{
   padding-top: 1rem;
+  padding-bottom: 3rem;
+  height: 69px;
+  transition: .3s ease-in-out;
+
+  
 }
 .ingrediant-component{
   display: grid;
@@ -172,7 +182,7 @@ body{
   font-weight: 700;
 }
 .single{
-  max-height: 2rem;
+  max-height: 3rem;
   transition:  .2s;
 
 }
@@ -181,7 +191,7 @@ body{
   background-color: #303030;
   padding: 1rem;
   border-radius: .5rem;
-  max-height: 5rem;
+  max-height: 6rem;
   
 }
 .rotate{
@@ -293,6 +303,8 @@ h1{
   font-size: 1.8rem;
   margin: 0;
   padding: 1rem;
+  -webkit-box-shadow: 0px 70px 18px -50px rgba(227,28,105,1);
+ 
 }
 button{
   padding: 1rem 3rem;
@@ -304,9 +316,25 @@ button{
   color: white;
   font-weight: 700;
   cursor: pointer;
+  transition: transform 0.3s ease;  
+  
+
+}
+button:hover{
+  transform: translateY(-5px);
+
 }
 
 /* cart css */
+
+.sub-num{
+  font: 3px;
+  color: #bababa;
+}
+.sub-price{
+  font-size: 2.5rem;
+  font-weight: 700;
+}
 .IoCloseSharp{
   cursor: pointer;
   transition: .2s;
@@ -317,6 +345,13 @@ button{
 }
 .subtotal{
   display: flex;
+  gap: .5rem;
+  align-items: center;
+  padding: 0 2rem;
+}
+.subtotal button{
+  margin: 0;
+  
 }
 .cart-buy-btn{
   background-color: #e31c69;

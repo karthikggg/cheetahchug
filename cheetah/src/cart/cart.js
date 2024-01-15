@@ -25,8 +25,8 @@ if (discart) {
 
       </div>
       <div className="subtotal">
-        subtotal <div>{` ( ${cartitem.length} )`}</div>
-        <div>{ a+"$"}</div>
+        subtotal <div className='sub-num'>{` ( ${cartitem.length} ):`}</div>
+        <div className='sub-price'>{ a+"$"}</div>
         <button className='cart-buy-btn'>Checkout</button>
         
       </div>
@@ -41,6 +41,7 @@ if (discart) {
 
         )
       })}</div>
+      <div>no items then...</div>
     </div>
   )
 }

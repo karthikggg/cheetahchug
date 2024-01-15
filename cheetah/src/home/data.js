@@ -1,19 +1,19 @@
 const navbar = [
    {
     id:"1",
-    name : 'PRODUCTS'
+    name : 'Products'
    },
    {
     id:"2",
-    name : 'PROMOTIONS'
+    name : 'Promotions'
    },
    {
     id:"3",
-    name : 'INDGREDIANS'
+    name : 'Ingrediants'
    },
    {
     id:"4",
-    name : 'CONTACT US'
+    name : 'Contact US'
    },
 
 ];
