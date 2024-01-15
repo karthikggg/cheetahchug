@@ -55,19 +55,28 @@ body{
 }
 .hometext{
   margin: 0;
+  padding-left: 2rem;
 }
 .hometext p{
   margin: 0;
 }
 .xe{
   align-items:end;
-  font-size: 6vw;
+  font-size: 5vw;
   color: greenyellow;
   margin: 0;
+  font-weight: 900;
+  width: 20vw;
+  line-height: 6rem;
+  padding: 2rem 0;
+
 
 }
 .grab{
-  font-weight: 700;
+  width: 25vw;
+  padding: 2rem 0;
+  color: #bababa;
+  font-size: 1.2vw;
 }
 
 
