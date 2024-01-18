@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/cheetahchug/static/css/main.c0e89f41.chunk.css",
+    "main.js": "/cheetahchug/static/js/main.b1f455b4.chunk.js",
+    "main.js.map": "/cheetahchug/static/js/main.b1f455b4.chunk.js.map",
+    "runtime-main.js": "/cheetahchug/static/js/runtime-main.b458b842.js",
+    "runtime-main.js.map": "/cheetahchug/static/js/runtime-main.b458b842.js.map",
+    "static/js/2.e4f17a53.chunk.js": "/cheetahchug/static/js/2.e4f17a53.chunk.js",
+    "static/js/2.e4f17a53.chunk.js.map": "/cheetahchug/static/js/2.e4f17a53.chunk.js.map",
+    "static/js/3.9792cf9c.chunk.js": "/cheetahchug/static/js/3.9792cf9c.chunk.js",
+    "static/js/3.9792cf9c.chunk.js.map": "/cheetahchug/static/js/3.9792cf9c.chunk.js.map",
+    "index.html": "/cheetahchug/index.html",
+    "precache-manifest.ffe17c2bd171a3ad60fcf85001bdede3.js": "/cheetahchug/precache-manifest.ffe17c2bd171a3ad60fcf85001bdede3.js",
+    "service-worker.js": "/cheetahchug/service-worker.js",
+    "static/css/main.c0e89f41.chunk.css.map": "/cheetahchug/static/css/main.c0e89f41.chunk.css.map",
+    "static/js/2.e4f17a53.chunk.js.LICENSE.txt": "/cheetahchug/static/js/2.e4f17a53.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b458b842.js",
+    "static/js/2.e4f17a53.chunk.js",
+    "static/css/main.c0e89f41.chunk.css",
+    "static/js/main.b1f455b4.chunk.js"
+  ]
+}
