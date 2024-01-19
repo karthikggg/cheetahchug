@@ -4,7 +4,8 @@ export const Singleproduct = ({product, addtocart}) => {
     const {id,name,img,cards,price} = product
 
   return (
-    <div className='singleproduct'>
+    <div>
+        <div className='singleproduct'>
         <div className="product">
             <h1>{name}</h1>
             <div className="cards">
@@ -27,6 +28,8 @@ export const Singleproduct = ({product, addtocart}) => {
             <button onClick={()=>addtocart(id)}>Add to cart</button>
         </div>
         <img src={img} alt="" />
+    </div>
+    <hr />
     </div>
   )
 }

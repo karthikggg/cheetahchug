@@ -8,6 +8,7 @@ import Allproductsdata from './productsdata';
 import { Cart } from './cart/cart';
 import { Navbar } from './navbar';
 import { Footer } from './footer';
+import { Cartcount } from './cartcount';
 
 
 
@@ -45,6 +46,7 @@ console.log(discart);
       
       <div className={discart? 'all-content' : 'content'}>
         <Navbar displaycart={displaycart} discart={discart}  />
+        <Cartcount />
         <Home />
         <Ingrediants />
         <Video />
@@ -54,8 +56,6 @@ console.log(discart);
       <div className={discart? 'none' : 'dis'}>
           <Cart displaycart={displaycart} cartitem={cartitem}  deletecartitem={deletecartitem}  discart={discart}/>
       </div>
-      
-   
     </div>
   );
 }

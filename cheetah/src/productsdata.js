@@ -7,8 +7,8 @@ const Allproductsdata =[
         cards:[
             {
                 id:'1',
-                name:'Amount',
-                cl:'110 cl',
+                name:'Amount serving',
+                cl:'11 cl',
                 percentage:'7.1%'
             },
             {
@@ -20,7 +20,7 @@ const Allproductsdata =[
             {
                 id:'3',
                 name:'Sodium',
-                cl:'130mg',
+                cl:'13mg',
                 percentage:'6%'
             },
             {
@@ -45,8 +45,8 @@ const Allproductsdata =[
         cards:[
             {
                 id:'1',
-                name:'Amount Per Serving',
-                cl:'110 cl',
+                name:'Amount Serving',
+                cl:'11 cl',
                 percentage:'7.1%'
             },
             {
@@ -58,7 +58,7 @@ const Allproductsdata =[
             {
                 id:'3',
                 name:'Sodium',
-                cl:'130mg',
+                cl:'13mg',
                 percentage:'6%'
             },
             {
@@ -83,8 +83,8 @@ const Allproductsdata =[
         cards:[
             {
                 id:'1',
-                name:'Amount Per Serving',
-                cl:'110 cl',
+                name:'Amount Serving',
+                cl:'11 cl',
                 percentage:'7.1%'
             },
             {
@@ -96,7 +96,7 @@ const Allproductsdata =[
             {
                 id:'3',
                 name:'Sodium',
-                cl:'130mg',
+                cl:'13mg',
                 percentage:'6%'
             },
             {
