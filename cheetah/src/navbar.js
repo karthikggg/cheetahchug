@@ -38,11 +38,11 @@ export const Navbar = ({displaycart, discart , cartitem}) => {
   return (
     <div className='navbar'   >
         <Link to='home' smooth={true} duration={500}><img src="./assets/logo.png" alt="" className="logo" /></Link>
-        <div className={threedot ? "links" : 'heading'}  >
+        <div className={threedot ? "unvisible" : 'heading'}  >
            
            {navbar.map((nav)=>{
                 return(
-                   <div className={responsivebar? 'linkss' : 'unvisible'}>
+                   <div className={responsivebar? 'linkss' : ''}>
                         <Link  className='link'  to={nav.compname} smooth={true} duration={500} key={nav.id}>{nav.name}</Link> 
                    </div>
                 )
