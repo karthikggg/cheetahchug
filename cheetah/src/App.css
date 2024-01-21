@@ -105,11 +105,10 @@ body{
 /* navbar styla */
 
 .navbar{
-  background-color: transparent;
   color: white;
   padding:0 3rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: 5rem;
   font-size: 1rem;
@@ -163,23 +162,47 @@ body{
   cursor: pointer;
 
 }
-.resbar{
+.displaynones{
+  display :none;
+}
+.unvisible{
   display: none;
 }
+
 /*media*/
 @media only screen and (max-width: 900px) {
-  .navbar{
-    /* From https://css.glass */
-background: rgba(255, 255, 255, 0.2);
-
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
-  }
  
+  .navbar{
+    display: flex;
+    transition: .2s;
+    
+    
   
+  }
+  .navbar img {
+    width: 5rem;
+  }
+  .link{
+    font-size: 2rem;
+    color: #ffffff;
+    position: absolute;
+    background-color: #414141;
+    width: 13rem;
+    transform: translate(-9rem , -6rem);
+    border-radius: .7rem;
+    padding: 1rem;
+  }
+  .unvisible{
+    display: none;
+  }
+  .linkss{
+   background-color: #2d9c16;
+   color: rgb(85, 85, 85);
+   display: block;
+   height: 4.5rem;
+   transform: translate(9rem, 19rem);
   
+  }
 }
 
 
@@ -209,6 +232,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   height: 0px;
   transition: .2s ease-in-out;
   opacity: 0;
+  
 }
 .display{
   padding-top: 1rem;
@@ -382,7 +406,7 @@ h1{
   height: 1rem;
   text-align: center;
   font-size: 1.2vw;
-  color: rgb(255, 255, 255);
+  color: rgb(179, 179, 179);
   letter-spacing: 1.2px;
 
 }
@@ -394,7 +418,7 @@ h1{
   font-size: 2vw;
   margin: 0;
   padding: 1rem;
-  color: rgb(160, 160, 160);
+  color: rgb(255, 255, 255);
  
 }
 button{
@@ -663,6 +687,7 @@ a{
  
   .footer{
     display: grid;
+    padding: 2rem;
   }
   
 }

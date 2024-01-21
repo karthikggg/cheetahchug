@@ -12,8 +12,8 @@ export const Singleproduct = ({product, addtocart}) => {
             <div className="cards">
                 {cards.map((card)=>{
                     return(
-                        <div className='overall-card'>
-                        <div className="singlecard" key={card.id}>
+                        <div className='overall-card' key={card.id}>
+                        <div className="singlecard" >
                             <p className="amount-per-serving">{card.name}</p>
                             <p className="Total-fat">{card.cl}</p>
                             <p className="percentage">{card.percentage}</p>
@@ -24,7 +24,6 @@ export const Singleproduct = ({product, addtocart}) => {
                     )
                 })}
             </div>
-            {console.log(price)}
             <div className="cost">{price+'$'}</div>
             <button onClick={()=>addtocart(id)}>Add to cart</button>
         </div>
