@@ -1,5 +1,6 @@
 import './App.css';
 import React, { useState } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 import { Home } from './home/homepage';
 import { Ingrediants } from './ingridiants/ingrediants';
 import { Video } from './video';
@@ -45,8 +46,7 @@ console.log(discart);
     <div className="">
       
       <div className={discart? 'all-content' : 'content'}>
-        <Navbar displaycart={displaycart} discart={discart}  />
-        <Cartcount />
+        <Navbar displaycart={displaycart} discart={discart} cartitem={cartitem}  />
         <Home />
         <Ingrediants />
         <Video />

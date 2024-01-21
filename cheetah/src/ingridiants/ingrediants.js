@@ -9,7 +9,7 @@ export const Ingrediants = () => {
 const [ingrediant , setingrediant] = useState(ingrediants)
 
   return (
-    <div>
+    <div className='ingrediantsss'>
       <div style={{background:'black'}}>
       <h1 className='ingrediants-top'>INGREDIANTS</h1>
       <div className="underline"></div>

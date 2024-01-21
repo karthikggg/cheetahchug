@@ -1,19 +1,24 @@
 const navbar = [
    {
     id:"1",
-    name : 'Products'
+    name : 'Products',
+    compname : 'productsall'
    },
    {
     id:"2",
-    name : 'Promotions'
+    name : 'Promotions',
+    compname : 'vidio'
    },
    {
     id:"3",
-    name : 'Ingrediants'
+    name : 'Ingrediants',
+    compname : 'ingrediantsss'
    },
    {
     id:"4",
-    name : 'Contact US'
+    name : 'Footer',
+    compname : 'footer'
+
    },
 
 ];

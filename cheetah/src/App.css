@@ -73,7 +73,32 @@ body{
   width: 25vw;
   padding: 2rem 0;
   color: #bababa;
-  font-size: 1.2vw;
+  font-size: 1rem;
+}
+
+/*mediaq*/
+@media only screen and (max-width: 900px) {
+  .home {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  .xe{
+    font-size: 7vw;
+    line-height: 6vw;
+  }
+  .grab{
+    width: 50vw;
+    padding-top: 1rem;
+  }
+  .home img{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    transform: translate(1rem ,0) ;
+  }
+  
 }
 
 
@@ -103,20 +128,20 @@ body{
   color: #bababa;
 
 }
-.heading li a {
+ .link {
   list-style: none;
   text-decoration: none;
   transition: .2s;
   color: #bababa;
 }
-.heading li {
+.link {
   list-style: none;
   font-size: 1.5rem;
   cursor: pointer;
   transition: .2s;
 
 }
-.heading li a:hover{
+.link:hover{
   color: #e31c69;
   text-decoration: underline;
 }
@@ -138,6 +163,27 @@ body{
   cursor: pointer;
 
 }
+.resbar{
+  display: none;
+}
+/*media*/
+@media only screen and (max-width: 900px) {
+  .navbar{
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+ 
+  
+  
+}
+
+
+
 
 /* ingredians page */
 .ingrediants-top{
@@ -182,7 +228,6 @@ body{
   font-size: 3rem;
 }
 .ing-w{
- 
   display: flex;
   justify-content: space-between;
   font-size: 1.5rem;
@@ -191,32 +236,58 @@ body{
 .single{
   max-height: 3rem;
   transition:  .2s;
-
 }
 .single{
   width: 25rem;
   background-color: #303030;
   padding: 1rem;
   border-radius: .5rem;
-  max-height: 6rem;
-  
+  max-height: 6rem; 
 }
 .rotate{
-  
-  transition: .2s;
-  
+  transition: .2s; 
 }
 .rotate{
   rotate: 90deg;
-  
-  
 }
 .rotateback{
   transition: .2s;
-
 }
 
+/*media*/
+@media only screen and (max-width: 900px) {
+  .singleproduct{
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+  }
+  .ingrediants{
+    display: grid;
+    justify-content: center;
+    -webkit-tap-highlight-color: transparent;
+    
+  }
+  .ingrediants img{
+    width: 20rem;
+    padding-top: 2rem;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .ingrediant-component{
+    width: 3vw;
+  }
+  .single{
+    width: 15rem;
+  }
+  .ing-w{
+    font-size: 1rem;
+  }
 
+  
+  
+  
+}
 /* promo vidio page */
 
 
@@ -253,8 +324,12 @@ video{
   background-color: #000;
   color: rgb(255, 255, 255);
   display: grid;
+  justify-content: center;
+  padding: 0;
+
 
 }
+
 h1{
   padding: 0;
   margin: 0;
@@ -282,11 +357,11 @@ h1{
   border-radius: .5rem;
   min-height: 140px;
   min-width: 70px;
+  max-width: 150px;
 }
  .singleproduct img{
   width: 30vw;
-  position: relative;
-  left: 4rem;
+  max-width: 28vw;
 }
 .singleproduct h1{
   font-size: 3vw;
@@ -344,6 +419,48 @@ button:active{
   background-color: #000;
   color: white;
 }
+
+
+/*media querry*/
+@media only screen and (max-width: 900px) {
+ 
+  .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr   ;
+    justify-content: space-around;
+    justify-content: center;
+  }
+  .singleproduct{
+    display: grid;
+    justify-content: center;
+    
+    
+  }
+  .singleproduct img{
+    min-width: 15rem;
+  }
+  .singlecard{
+    background-color:#303030 ;
+    width: 6rem;
+    font-size: 1rem;
+   
+  }
+  .Total-fat{
+    font-size: 1.5rem;
+  }
+  .amount-per-serving{
+    font-size: 1rem;
+  }
+  .singleproduct button {
+    margin-top: 0;
+  }
+  .product{
+    transform: translate(0,-4rem);
+  }
+ 
+  
+}
+
 
 /* cart css */
 
@@ -480,7 +597,13 @@ a{
   font-size: .8rem;
   color: #bababa;
 }
-
+/*media*/
+@media only screen and (max-width: 600px) {
+  .displaycart {
+    width: 24rem;
+    height: 55rem;
+  }
+}
 /* Footer css */
 
 .footer{
@@ -515,10 +638,32 @@ a{
 }
 
 .cart-count{
-  color: white;
+ 
   width: 100%;
   height: 100%;
   
  
+}
+.cart-counts{
+  position: absolute;
+  transform: translate(28px,-60px);
+  pointer-events: none;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color:chartreuse;
+ 
+}
+::-webkit-scrollbar-track {
+  background-color: #e40000;
+  width: 4rem;
+
+
+}
+@media only screen and (max-width: 900px) {
+ 
+  .footer{
+    display: grid;
+  }
+  
 }
 
